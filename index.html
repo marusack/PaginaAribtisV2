@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--[if IE 9]>
+	<html class="ie9" lang="en">
+<![endif]-->
+	
+	<head>
+		<title>Airbits | Under Construction</title>
+		
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:300,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="images/faviconlogo.png">
+	</head>
+	
+	<body>	
+		
+		<!-- BEGIN MAIN -->
+		<div class="section-main" id="top">
+			<div class="mini-container main-mini-container">
+				<div class="title">
+					<div class="header">
+                                            <img src="images/logo.png" class="logo" alt="Airbits" width="50%" />
+						<h1>coming soon</h1>
+					</div>
+
+					<div class="content">
+						<div id="countdown">
+							<div class="countdown-elem elem-days">
+								
+									<h2 class="days">00</h2>
+								
+								<span class="time_Days">days</span>
+							</div><!--
+							--><div class="countdown-elem elem-hours">
+									<h2 class="hours">00</h2>
+								
+								<span class="time_Hours">hours</span>
+							</div><!--
+							--><div class="countdown-elem elem-minutes">
+									<h2 class="minutes">00</h2>
+								<span class="time_Minutes">minutes</span>
+							</div><!--
+							--><div class="countdown-elem elem-seconds">
+									<h2 class="seconds">00</h2>
+								<span class="time_Seconds">seconds</span>
+							</div>
+						</div>
+						<div class="navigation">
+							<a class="nav-button" onclick="showSection('section-subscribe')">Project</a>
+							<a class="nav-button" onclick="showSection('section-about')">About Us</a>
+							<a class="nav-button" onclick="showSection('section-contact')">Contact</a>
+						</div>
+						<div class="social-nav">
+							<!-- Social Icons -->
+							<a onclick="showSection('section-contact')" target="_blank" class="social-button"><i class="fa fa-fw fa-envelope"></i></a>
+							<a href="https://www.facebook.com/airbitstechnology" target="_blank" class="social-button"><i class="fa fa-fw fa-facebook"></i></a>
+							<a href="http://www.airbits.com.ar/" target="_blank" class="social-button"><i class="fa fa-fw fa-globe"></i></a>
+							<!-- End Social Icons -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="videoMuteButton" onclick="$('#bgndVideo').toggleVolume(); $('.videoButton.notmuted').toggleClass('mute');">
+				<div class="videoButton notmuted"><i class="fa fa-volume-up"></i></div>
+				<div class="videoButton muted"><i class="fa fa-volume-off"></i></div>
+			</div>					
+		</div>		
+		<!-- END MAIN -->
+		
+		<!-- BEGIN SUBSCRIBE PAGE -->
+		<div class="scrollsection section-subscribe">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button" onclick="closeSection('section-subscribe')">close</a>
+					<h2>Project</h2>
+				</div>
+				<div class="content">
+					<p>&iquest;Alguna vez pensaste en como seria la vida si pudieras automatizar tu rutina, mejorar tu seguridad, controlarla a tu gusto&#63; En Airbits estamos trabajando para hacerlo realidad,
+                         queremos que vos solo te preocupes por disfrutar de tus d&#237;as y tu entorno reaccione frente a tus necesidades.
+                         Pr&#243;ximamente conocer&#225;s lo que es una vida inteligente.</p>
+					<p>Suscribete para enterarte de nuestros proximos lanzamientos</p>		
+					<div class="subscribe">
+						<form id="newsletter-signup" action="php/subscribe.php?action=signup" method="post">
+							<input type="email" class="enteremail" name="signup-email" placeholder="Enter your email address" spellcheck="false" />
+							<button type="submit" id="signup-button" class="signup-button"><i class="fa fa-check"></i></button>
+							<div id="signup-response" class="signup"></div>
+						</form>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+		<!-- END SUBSCRIBE PAGE -->
+		
+		
+		<!-- BEGIN ABOUT PAGE -->
+		<div class="scrollsection section-about">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button" onclick="closeSection('section-about')">close</a>
+					<h2>About Us</h2>
+				</div>
+				<div class="content">
+					<p>Airbits es una empresa con aire joven y distendido, con la idea de revolucionar  la manera en que vas a vivir tu vida, cambiando tu entorno e integrando tecnolog&#237;a en los aspectos m&#225;s importantes de tu vida, como la seguridad y el confort.</p>
+					<p></p>			
+					
+					<!--<div class="about-container">
+						<div class="about-box">
+							<div class="about-box-text">
+								<span class="about-logo"><i class="fa fa-support fa-fw" style="color: #1abc9c"></i></span>
+								<h3>Great Support</h3>
+								<p>We try extremely hard to provide a fast and excellent support service. You'll have a reply within 12 hours.</p>
+							</div>
+						</div>
+                        <div class="about-box-spacer"></div>
+						<div class="about-box">
+							<div class="about-box-text">
+								<span class="about-logo"><i class="fa fa-heart fa-fw" style="color: #ff7d7d"></i></span>
+								<h3>Made with Love</h3>
+								<p>A lot of time and hard work goes into making our templates - we hope that you love them as much as we do.</p>
+							</div>
+						</div>
+						<div class="about-box-spacer"></div>
+						<div class="about-box">
+							<div class="about-box-text">
+								<span class="about-logo"><i class="fa fa-magic fa-fw" style="color: #52b8cc"></i></span>
+								<h3>Easy Setup</h3>
+								<p>Finely is very simple to set up and customise. All of the code is clearly commented and well documented.</p>
+							</div>
+						</div>-->
+                    <div class="services-block content content-center" id="services">
+        
+                <div class="row about-container" style="grid-column-align:center;">
+                <div class="col-md-3 col-sm-3 col-xs-12 item">
+                    <span class="about-container about-box about-logo"><i class="fa fa-lock " style=" color: #1abc9c;margin-left: 5%; "></i></span>
+                    <h3>Seguridad </h3>
+                    <p> <br> </p>
+                </div>
+                <!--<div class=" about-box-spacer"></div>-->
+                <div class="col-md-3 col-sm-3 col-xs-12 item">
+                    <span class="about-container about-box about-logo"><i class="fa fa-home " style=" color: #1abc9c;"></i></span>
+                    <h3 style="margin-left: 5%;">Domotica</h3>
+                    <p> <br>  </p>
+                </div>
+                    
+                <div class="col-md-3 col-sm-3 col-xs-12 item">
+                    <span class="about-container about-box about-logo"><i class="fa fa-cloud " style=" color: #1abc9c;"></i></span>
+                    <h3 style="margin-left: 20%;">Cloud</h3>
+                    <p> <br>  </p>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12 item" >
+                    <span class="about-container about-box about-logo" ><i class="fa fa-mobile " style=" color: #1abc9c;margin-left: 30%;"></i></span>
+                    <h3 style="margin-left: 25%;">Mobile  </h3>
+                    <p> <br> </p>
+                </div>
+            </div>
+        
+    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END ABOUT PAGE -->
+		
+		<!-- BEGIN CONTACT PAGE -->
+		<div class="scrollsection section-contact">
+			<div class="mini-container">
+				<div class="header">
+					<a class="nav-button" onclick="closeSection('section-contact')">close</a>
+					<h2>contact</h2>
+				</div>
+				<div class="content">
+					<div class="contact-box-container">
+					<div class="contact-box left">
+						<p>Si tienes preguntas o dudas, comentarios o sugerencias, nos encantaria que nos escribas. Por favor ponte en contacto en cualquier momento y nosotros nos podremos en contacto con usted e cualquier momento.</p>
+						<ul>
+							<li><i class="fa fa-fw fa-map-marker"></i>24 Don bosco, Ciudad de Resistencia, Chaco Argetina</li>
+							<!-- el primer gloe era class=fa fa-fw fa-phone para q aparesca el telefomito-->
+
+							<li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">info@airbits.com.ar</a></li>
+							<li><i class="fa fa-fw fa-thumbs-o-up"></i><a href="www.facebook.com/airbitstechnology">Facebook:Airbits Technology</a></li>
+							<li><i class="fa fa-fw fa-globe"></i><a href="www.Airbits.com.ar">www.Airbits.com.ar</a></li>
+						</ul>
+					</div>
+					<div class="contact-box-spacer"></div>
+					<div class="contact-box right">
+						<div class="contact-wrap">
+							<div id="contact-success"><!-- Success Message --><i class="fa fa-check"></i> Tu email fue enviado. Gracias!</div>
+								<form id="contact-us" action="php/contact.php?action=contact" method="post">
+									<!-- Anti-spam input, do not delete! --><input type="text" class="antispam" name="friendlyUrl" /><!-- Anti-spam input, do not delete! -->
+									<input type="text" class="contact-form-input requiredField" id="contactName" name="contactName" placeholder="Name" spellcheck="false" />
+									<input type="email" class="contact-form-input requiredField email" id="email" name="email" placeholder="Email" spellcheck="false" />
+									<textarea class="contact-form-input message-box requiredField" placeholder="Message" name="comments" id="commentsText"></textarea>
+									<input type="submit" name="submit" id="contact-button" value="Send" />
+									<div class="contact-loading">
+										<div class="square-loader-wrap">
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+											<div class="square-loader"></div>
+										</div>
+									</div>
+									<input type="hidden" name="submitted" id="submitted" value="true" />
+									<div class="contact-response"><!-- Error Message -->Por favor arregla los errores y prueba nuevamente </div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END CONTACT PAGE -->
+		
+		<!-- Background Video container -->
+		<a id="bgndVideo" class="player"></a>
+		
+		<!-- Loading Page Overlay -->
+		<div class="page-loading">
+			<noscript><div class="noscript-error"><i class="fa fa-info-circle"></i>Enable JavaScript to see this site working properly.</div></noscript>
+			<div class="square-loader-wrap">
+				<div class="square-loader"></div>
+				<div class="square-loader"></div>
+				<div class="square-loader"></div>
+				<div class="square-loader"></div>
+			</div>
+		</div>
+
+		<!-- JAVASCRIPT -->
+		<script type="text/javascript" src="js/jquery.js"></script>
+			
+			<!-- All set up / customisation variables for slideshow and video background etc. in custom.js file -->
+			<script type="text/javascript" src="js/custom.js"></script>
+		
+		<script type="text/javascript" src="js/finely.js"></script>
+		<script type="text/javascript" src="js/countdown.js"></script>
+		<script type="text/javascript" src="js/emailsubscribe.js"></script>
+		<script type="text/javascript" src="js/contact.js"></script>
+		<script type="text/javascript" src="js/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+		<script type="text/javascript" src="js/placeholders.min.js"></script>
+		
+		
+		<script type="text/javascript">
+								
+			// No need to edit here - all settings in custom.js file
+					
+			$(document).ready(function(){
+				
+				$('.page-loading').html('');
+				
+				if(videoBackground == 'on') {			
+				    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+						$(".player").hide();
+						$.backstretch(slideshowBackgroundURLS, {
+			    	    	fade: slideshowFade,
+			    	   		duration: slideshowDuration
+			    		});
+			    		$('.backstretch img').load(function(){
+							if(preloader == 'on') {
+   								$('.page-loading').delay(1500).fadeOut(1000, function() { animateInStart(); });
+							}
+							else {
+								animateInStart();
+							}
+						});
+					}
+					else {
+						$(".player").mb_YTPlayer({
+							videoURL: videoBackgroundURL,
+							containment: 'body',
+							autoPlay: true,
+							mute: videoMuted,
+							startAt:0,
+							opacity:1
+						});
+						$('#bgndVideo').on("YTPStart",function(){
+							if(preloader == 'on') {
+   								$('.page-loading').delay(1500).fadeOut(1000, function() { animateInStart(); });
+							}
+							else {
+								animateInStart();
+							}
+						});
+						
+						if(videoMuted == false) {
+							$('.videoMuteButton').show();
+						}
+					}
+				}
+				else {
+					$.backstretch(slideshowBackgroundURLS, {
+			    	    fade: slideshowFade,
+			    	    duration: slideshowDuration
+			    	});
+			    	$('.backstretch img').load(function(){
+						if(preloader == 'on') {
+   								$('.page-loading').delay(1500).fadeOut(1000, function() { animateInStart(); });
+							}
+							else {
+								animateInStart();
+							}
+					});
+				}
+				
+				$("#countdown").countdown({ date: countdownDate	});
+				
+				if ($(window).width() < 599) {
+					$('.about-container .about-box-spacer').css('height', '1px');
+				}
+				else {
+					var ieAboutSpacerHeight = $('.about-box-text').height() + 'px';
+					$('.about-container .about-box-spacer').css('height', ieAboutSpacerHeight);
+				}
+				
+				if (preloaderGIF == 'on') {
+					$('.page-loading').html('<noscript><div class="noscript-error"><i class="fa fa-info-circle"></i>Enable JavaScript to see this site working properly.</div></noscript><div class="gif-preloader"></div>');
+				}
+				else {
+					$('.page-loading').html('<noscript><div class="noscript-error"><i class="fa fa-info-circle"></i>Enable JavaScript to see this site working properly.</div></noscript><div class="square-loader-wrap"><div class="square-loader"></div><div class="square-loader"></div><div class="square-loader"></div><div class="square-loader"></div></div>');
+				}
+			});
+		</script>
+	</body>
+</html>
