@@ -60,10 +60,12 @@ include('settings.php');
                                                 $date = date('Y-m-d'); // Get the current date to store with email in database
                                                 $time = date('H:i:s'); // Get the current time to store with email in database
                                                 //aca guardo el despelote
-                                                mysql_connect($mysql_host,$mysql_username,$mysql_password);  
+                                                $con=mysql_connect($mysql_host,$mysql_username,$mysql_password);  
                                                 mysql_select_db($mysql_database);
-                                                $insertEmail = mysql_query("INSERT INTO contacto (email, body, date,time)VALUES ('$email','$body','$date','$time')");
-                                                                
+                                                mysql_query($con,"INSERT INTO contacto (email, body, date,time)VALUES ('$email','$body','$date','$time')");
+                                                
+
+                                                mysqli_close($con);
 						echo 'sent successfully<br />';
 					}
 					else {
