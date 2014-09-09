@@ -124,10 +124,10 @@ if(mail('jarasergio@outlook.com', $subject, $body, $headers))
 //aca guardo el despelote
 			mysql_connect($mysql_host,$mysql_username,$mysql_password);  
 			mysql_select_db($mysql_database);
-			$insertEmail = mysql_query("INSERT INTO contacto (email, body, date,time)	VALUES ('$email','$body','$date','$time')");
+			$insertEmail = mysql_query("INSERT INTO contacto (email, body, date,time)VALUES ('$email','$body','$date','$time')");
 
 		
-				 if ($insertEmail===TRUE){
+				 if ($insertEmail==TRUE){
 				        echo 'Se inserto el chango';
 				    }  else {
 
