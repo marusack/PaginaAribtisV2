@@ -53,7 +53,7 @@ include('settings.php');
 					$headers .= 'Reply-To: '. $email .'' . "\r\n";
 					
 					// Additional headers
-					$headers .= 'From: '. $siteName .'' . "\r\n";
+					$headers .= 'From: '. 'www.airbits.com.ar' .'' . "\r\n";
 			
 					if(mail($emailTo, $subject, $body, $headers)) {
 						$emailSent = 'true';
