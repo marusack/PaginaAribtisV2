@@ -33,7 +33,7 @@ $mysql_host = "localhost";
 $mysql_username = "root";
 
 // Password for MySQL Access
-$mysql_password = "";
+$mysql_password = " ";
 
 // Name of MySQL Database to use
 $mysql_database = "paginaairbits";

@@ -63,8 +63,8 @@ include('settings.php');
                                                 $email= mysqli_real_escape_string($con, $_POST['email']);
                                                 $comments= mysqli_real_escape_string($con, $_POST['comments']);
                                                 //aca guardo el despelote
-                                                $con=mysql_connect($mysql_host,$mysql_username,$mysql_password);  
-                                                mysql_select_db($mysql_database);
+                                                $con=mysql_connect('localhost','root',' ');  
+                                                mysql_select_db('paginaairbits');
                                                 mysql_query($con,"INSERT INTO contacto (email, body, date,time)VALUES ('$email','$comments','$date','$time')");
                                                 
 
