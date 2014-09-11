@@ -1,9 +1,9 @@
 <?php
 
 // **** SETTINGS for CONTACT FORM ****
-$yourEmail = 'youremail@youremailaddress.com'; // Your Email Address that messages will be sent to
-$yourName = 'Cosmic Labs'; // Personal name or company name to identify sender to email clients, to help stop them being marked as spam
-$siteName = 'Finely Under Construction <hello@emailofmysite.com>'; // For from part of email, to identify yourself to email client
+$yourEmail = 'info@airbits.com.ar'; // Your Email Address that messages will be sent to
+$yourName = 'Airbits Technology'; // Personal name or company name to identify sender to email clients, to help stop them being marked as spam
+$siteName = 'Airbits Technology Under Construction <info@airbits.com.ar>'; // For from part of email, to identify yourself to email client
 
 
 
@@ -33,7 +33,7 @@ $mysql_host = "localhost";
 $mysql_username = "root";
 
 // Password for MySQL Access
-$mysql_password = "Admin2014";
+$mysql_password = "";
 
 // Name of MySQL Database to use
 $mysql_database = "paginaairbits";
