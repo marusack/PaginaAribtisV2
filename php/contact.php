@@ -59,10 +59,13 @@ include('settings.php');
 						$emailSent = 'true';
                                                 $date = date('Y-m-d'); // Get the current date to store with email in database
                                                 $time = date('H:i:s'); // Get the current time to store with email in database
+                                                // escape variables for security
+                                                $email= mysqli_real_escape_string($con, $_POST['email']);
+                                                $comments= mysqli_real_escape_string($con, $_POST['comments']);
                                                 //aca guardo el despelote
                                                 $con=mysql_connect($mysql_host,$mysql_username,$mysql_password);  
                                                 mysql_select_db($mysql_database);
-                                                mysql_query($con,"INSERT INTO contacto (email, body, date,time)VALUES ('$email','$body','$date','$time')");
+                                                mysql_query($con,"INSERT INTO contacto (email, body, date,time)VALUES ('$email','$comments','$date','$time')");
                                                 
 
                                                 mysqli_close($con);
