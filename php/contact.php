@@ -47,7 +47,7 @@ include('settings.php');
                                         $con=mysqli_connect('localhost','root','','paginaairbits');
                                         //abro la conexion;
                                         $name= mysqli_real_escape_string($con, $_POST['contactName']);
-                                        $subject='nombre: '.$name.' email: '.$email;
+                                        $subject='nombre: '.$name.' email: '.$email.'comments: '.$comments;
                                         $email= mysqli_real_escape_string($con,$_POST['email']);
                                         $comments= mysqli_real_escape_string($con,$_POST['comments']);
                                         //evitar sql injection
