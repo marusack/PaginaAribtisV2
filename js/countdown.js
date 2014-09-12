@@ -6,7 +6,7 @@ $(function() {
 			$.extend(settings, options);
 		}
 		function countdown() {		
-			countToDate = Date.parse(settings['date']) / 1000;
+                        countToDate = Date.parse(settings['date']) / 1000;
 			currentDate = Math.floor($.now() / 1000);
 			
 			if(countToDate <= currentDate) {
