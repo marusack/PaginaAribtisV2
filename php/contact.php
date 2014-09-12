@@ -14,12 +14,12 @@ include('settings.php');
 					$name = trim($_POST['contactName']);
 				}
 				
-//				if(trim($_POST['friendlyUrl']) === '') {
-//				}
-//				else {
-//					$hasError = 'true';
-//					echo 'invalid spam field<br />';
-//				}
+				if(trim($_POST['friendlyUrl']) === '') {
+				}
+				else {
+					$hasError = 'true';
+					echo 'invalid spam field<br />';
+				}
 			
 				if(trim($_POST['email']) === '')  {
 					$hasError = 'true';
@@ -51,7 +51,7 @@ include('settings.php');
                                         $email= mysqli_real_escape_string($con,$_POST['email']);
                                         $comments= mysqli_real_escape_string($con,$_POST['comments']);
                                         //evitar sql injection
-					//mail('info@airbits.com.ar', $subject, $comments);
+					mail('info@airbits.com.ar', $subject, $comments);
                                         $emailSent = 'true';
                                         $date = date('Y-m-d'); // Get the current date to store with email in database
                                         $time = date('H:i:s'); // Get the current time to store with email in database
