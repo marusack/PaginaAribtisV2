@@ -40,7 +40,7 @@ $mysql_database = "paginaairbits";
 
 // Name of MySQL table where email information will be stored
 $mysql_table = "email";
-$mysql_tableContac = "email";
+$mysql_tableContac = "contacto";
 
 // Email Notification Settings
 // Change these details so notification emails can be sent to you

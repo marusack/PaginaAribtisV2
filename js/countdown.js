@@ -45,7 +45,7 @@ $(function() {
 			} else { 
 				alert("The date you entered is invalid or not in the correct format. \n\nPlease use the format: DD MONTH YYYY HH:MM:SS\nFor example: 05 august 2012 03:30:02\n\nIf you still see this message consult the documentation.");
 				clearInterval(interval); 
-                                //ver custom.js;D
+                                //ver custom.js ;D  ..
 			}
 		}
 		

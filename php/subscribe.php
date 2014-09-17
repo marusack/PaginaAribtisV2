@@ -1,9 +1,6 @@
 <?php
 
 include('settings.php');
-
-/* === BEGIN PHP SCRIPT === */
-
 if(isset($_GET['action'])) {
 	if($_GET['action'] == 'signup'){
 		
