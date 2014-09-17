@@ -36,28 +36,46 @@ include('settings.php');
 					echo 'message field is empty<br />';
 				} else {
 					if(function_exists('stripslashes')) {
-						$comments = stripslashes(trim($_POST['comments']));
+						$comments = stripslashes(trim(mysqli_real_escape_string($con,$_POST['comments'])));
 					} else {
-					$comments = trim($_POST['comments']);
+					$comments = trim( mysqli_real_escape_string($con,$_POST['comments']));
 					}
 				}
+                                if(!isset($hasError)) {
 			
+					
+			
+					if(mail($emailTo, $subject, $body, $headers)) {
+						$emailSent = 'true';
+						echo 'sent successfully<br />';
+					}
+					else {
+						$hasError = 'true';
+						echo 'failed to send<br />';
+					}
 				if(!isset($hasError)) {
                                         
-                                        $con=mysqli_connect('localhost','root','','paginaairbits');
+                                        $con=mysqli_connect($mysql_host,$mysql_username,$mysql_password);
+                                        if (mysqli_connect_errno()) {
+                                            echo "Error al conectar con MySQL: " . mysqli_connect_error();
+                                          }
                                         //abro la conexion;
+                                          
                                         $name= mysqli_real_escape_string($con, $_POST['contactName']);
-                                        $subject='nombre: '.$name.' email: '.$email.'comments: '.$comments;
                                         $email= mysqli_real_escape_string($con,$_POST['email']);
-                                        $comments= mysqli_real_escape_string($con,$_POST['comments']);
+                                        $subject='nombre: '.$name.' email: '.$email.'comments: '.$comments;
+                                        
+                                        
                                         //evitar sql injection
-					mail('info@airbits.com.ar', $subject, $comments);
-                                        $emailSent = 'true';
-                                        $date = date('Y-m-d'); // Get the current date to store with email in database
-                                        $time = date('H:i:s'); // Get the current time to store with email in database
-                                        //aca guardo el despelote
-                                        mysqli_query($con, "INSERT INTO contacto (email, body, date, time) VALUES ('$email','$comments','$date','$time')");
-                                        mysqli_close($con);                                       
+                                        
+					if(mail('info@airbits.com.ar', $subject, $comments)){
+                                                $emailSent = 'true';
+                                                $date = date('Y-m-d'); // Get the current date to store with email in database
+                                                $time = date('H:i:s'); // Get the current time to store with email in database
+                                                //aca guardo 
+                                                mysqli_query($con, "INSERT INTO $mysql_tableContac (email, body, date, time) VALUES ('$email','$comments','$date','$time')");
+                                            }
+                                        mysqli_close($con);
 				}
 			}
 		}
