@@ -3,7 +3,7 @@
 // **** SETTINGS for CONTACT FORM ****
 $yourEmail = 'info@airbits.com.ar'; // Your Email Address that messages will be sent to
 $yourName = 'Airbits Technology'; // Personal name or company name to identify sender to email clients, to help stop them being marked as spam
-$siteName = 'Airbits Technology Under Construction <info@airbits.com.ar>'; // For from part of email, to identify yourself to email client
+$siteName = 'Airbits Technology  <info@airbits.com.ar>'; // For from part of email, to identify yourself to email client
 
 
 
@@ -40,13 +40,13 @@ $mysql_database = "paginaairbits";
 
 // Name of MySQL table where email information will be stored
 $mysql_table = "email";
-
+$mysql_tableContac = "contacto";
 
 // Email Notification Settings
 // Change these details so notification emails can be sent to you
 
 // Email address to send notifications to
-$myEmail = "jarasergio@outlook.com";
+$myEmail = "mariel.sack@airbit.com.ar";
 
 // Where email is 'from', i.e. when you read email it will say From: (whatever you say). Add a name then email address you have setup inbetween the < and >
 $emailFrom = "Finely Under Construction <info@airbits.com.ar>";
@@ -67,16 +67,16 @@ $listId = '1826a2edf6';
 // Change these details with your own custom messages if you wish
 
 // Error message if no email is entered
-$emailempty_errormsg = "Please enter an address!!!!!.";
+$emailempty_errormsg = "Por favor introdusca una direccion!!!!!.";
 
 // Error message if email is invalid
-$invalidemail_errormsg = "That's not a valid email address.";
+$invalidemail_errormsg = "Introdujo una direccion invalida";
 
 // Error message if another error occurred (such as could not insert data into database)
-$insertfailure_errormsg = "Error. Try again.";
+$insertfailure_errormsg = "Ha ocurrido un error al tratar de almacenar sus datos.";
 
 // Error message if email address already exists in the database
-$emailexists_errormsg = "That address is already subscribed.";
+$emailexists_errormsg = "La direccion que ingreso, ya se ecuentra registrada";
 
 // Success message once email address is successfully stored in database
 $subscriptionsuccess_msg = "Thanks for subscribing. You'll hear from us soon.";

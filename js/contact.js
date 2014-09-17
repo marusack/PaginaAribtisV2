@@ -37,7 +37,7 @@ $(document).ready(function() {
 					}
 				}
 			});
-			
+			//
 			if($.trim($('.antispam').val()) !== '') {
 				$("#contact-button").addClass("contact-button-error").delay(3000).queue(function(){
     				$(this).removeClass("contact-button-error").dequeue();
