@@ -41,18 +41,7 @@ include('settings.php');
 					$comments = trim( mysqli_real_escape_string($con,$_POST['comments']));
 					}
 				}
-                                if(!isset($hasError)) {
-			
-					
-			
-					if(mail($emailTo, $subject, $body, $headers)) {
-						$emailSent = 'true';
-						echo 'sent successfully<br />';
-					}
-					else {
-						$hasError = 'true';
-						echo 'failed to send<br />';
-					}
+                                
 				if(!isset($hasError)) {
                                         
                                         $con=mysqli_connect($mysql_host,$mysql_username,$mysql_password);
